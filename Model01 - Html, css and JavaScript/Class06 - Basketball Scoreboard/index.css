@@ -1,0 +1,102 @@
+body {
+    display: block;
+    margin: 0;
+    text-align: center;
+    background: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: #1B244A;
+}
+
+.texth3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    font-size: 35.9px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.texth2 {
+    width: 120px;
+    height: 90px;
+    margin: 20px; 
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
+    background: #080001;
+}
+
+.btn {
+    color: #9AABD8;
+    background: transparent;
+    border-color: #9AABD8;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.newgame {
+    margin: 18px;
+    color: #9AABD8;
+    background: transparent;
+    border-color: #9AABD8;
+    border-radius: 4px;
+}
+
+.stopwatch{
+    background-color: #ffffff;
+    width: 40%;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin: auto auto;
+}
+
+.timerDisplay{
+    background: #ffffff;
+    left: 4%;
+    font-family: ‘Roboto mono’,monospace;
+    color: #0381bb;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,139,253,0.25);
+}
+
+.btnstopwatch{
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnstopwatch button{
+    width: 60px;
+    height: 30px;
+    background-color: #205e94;
+    color: #ffffff;
+    border: none;
+    font-family: ‘Poppins’,sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnstopwatch button:nth-last-child(2){
+  background-color: #d23332;
+}
+.btnstopwatch button:nth-last-child(1){
+  background-color: #20b380;
+}
+
+.period{
+    background-color: #ffffff;
+    width:13%;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    padding: 1px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    margin: 10px auto;
+}

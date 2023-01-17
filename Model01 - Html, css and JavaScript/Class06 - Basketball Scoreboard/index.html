@@ -1,0 +1,47 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="score">
+            <div class="container">
+                <div>
+                    <h3 class="texth3">HOME</h3>
+                    <h2 id="home-score" class="texth2">0</h2>
+                    <button id="home-one" onclick="homeone()" class="btn">+1</button>
+                    <button id="home-two" onclick="hometwo()" class="btn">+2</button>
+                    <button id="home-three" onclick="homethree()" class="btn">+3</button>
+                </div>
+                <div>
+                    <h3 class="texth3">GUEST</h3>
+                    <h2 id="guest-score" class="texth2">0</h2>
+                    <button id="guest-one" onclick="guestone()" class="btn">+1</button>
+                    <button id="guest-two" onclick="guesttwo()" class="btn">+2</button>
+                    <button id="guest-three" onclick="guestthree()" class="btn">+3</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="newgame" onclick="newgame()">New Game</button>
+        </div>
+        <div class="stopwatch">
+            <div class="timerDisplay">
+                00 : 00 : 000
+            </div>
+            <div class="btnstopwatch">
+                <button id="pause-timer">Pause</button>
+                <button id="start-timer">Start</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+        </div>
+        <div class="period">
+            <h3>PERIOD</h3>
+            <h2 id="period-time">1</h2>
+        </div>
+        <script src="index.js"></script>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+        </style>
+    </body>
+</html>
