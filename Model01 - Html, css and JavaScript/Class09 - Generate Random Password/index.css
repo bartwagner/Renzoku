@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1{
+    margin: 10px auto;    
+}
+
+hr{
+    border-color: #273549;
+    width: 440px;
+    margin-left: 0px;
+}
+
+p{
+    color: #D5D4D8;
+}
+
+.generatepassword{
+    margin: 20px auto;
+    background: #10B981;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    margin-right: 25px;
+    color: white;
+}
+
+input{
+    display: block;
+    background: cornsilk;
+    width: 40px;
+    height: 39px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btnsymbolonumber{
+    margin: 20px auto;
+    background: #10B981;
+    border: none;
+    padding: 11px 5px;
+    border-radius: 5px;
+    color: white;  
+}
+
+.passwordisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #273549;
+    width: 211px;
+    height: 39px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: #10B981;
+}
+
+.generate{
+    margin-top: 40px;
+    color: white;
+}
+
+.random{
+    color: #4ADF86;
+}
+
+.password{
+    display: flex;
+}
+
+.copyinformation{
+    display: block;
+}

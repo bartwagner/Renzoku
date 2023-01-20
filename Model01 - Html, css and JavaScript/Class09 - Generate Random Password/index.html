@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 class="generate">Generate a</h1>
+        <h1 class="random">random password</h1>
+        <p>Never use an insecure password again</p>
+        <p>What is it size your password? inset below between 5 until 20</p>
+        <input id="inputlengthpassword-el" onkeypress="return onlynumber();">
+        <div class="btn">
+            <button id="btngeneratepassword-el" class="generatepassword">Generate passwords</button>
+            <button id="btnsymbolonumber-el" class="btnsymbolonumber">Remove Symbol and numbers</button>
+        </div>
+        <hr>
+        <div>
+            <div class="password">
+                <div 
+                    class="passwordisplay" 
+                    disabled 
+                    id="divfirstpassword-el" 
+                    onclick="copyDivToClipboard('divfirstpassword-el')">
+                </div>
+                <div 
+                    class="passwordisplay"
+                    disabled id="divsecondpassword-el"
+                    onclick="copyDivToClipboard('divsecondpassword-el')">
+                </div>
+            </div>
+        </div>
+        <div class="copyinformation">
+            <p>click above to copy your password</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
