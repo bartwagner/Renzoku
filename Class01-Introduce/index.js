@@ -1,24 +1,12 @@
-// Challenge 2:
-// Replace the arguments below according to your preference.
-
-// space, scary, military, romantic, cowboy, fantasy, superhero
+//default
 favouriteMovieGenre("regular")
-
-// watermelon, tomato, banana, orange, avocado, blueberry
 favouriteFruit("regular")
-
-// light, dark
 favouriteMode("dark")
-
-// sharp, soft, round
 favouriteEdgeStyle("round")
-
-
 
 ////////////////////////////////////
 // IGONE THE CODE BELOW THIS LINE //
 ////////////////////////////////////
-
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
 }
@@ -29,7 +17,7 @@ function favouriteEdgeStyle(style) {
 
 function favouriteMovieGenre(font) {
     if (font) {
-        setProp("--font", "var(--" + font + ")");    
+        setProp("--font", "var(--" + font + ")");
     }
 }
 
@@ -86,4 +74,21 @@ function favouriteFruit(theme) {
     } 
 }
 
+function sendEmail(){
+    var emailPerson = document.getElementById("textinput").value;
+    
+    console.log(emailPerson)
 
+    Email.send({
+        Host:      "smtp.gmail.com",
+        Username : "<sender’s email address>",
+        Password : "<email password>",
+        To :       "<recipient’s email address>",
+        From :     `${emailPerson}`,
+        Subject :  "<email subject>",
+        Body :     "<email body>",
+    })
+    .then(function(message){
+        alert("mail sent successfully")
+    })
+}
