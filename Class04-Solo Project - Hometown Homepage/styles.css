@@ -1,12 +1,3 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
-
-*/
 body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,7 +12,7 @@ body {
     color: #F1FAEE;
 }
 
-.homepage-principal {
+.homepage--principal {
     display: inline-block;
     background: #1D3557;
     border: none;
@@ -30,7 +21,7 @@ body {
     margin-bottom: 0px;
 }
 
-.homepage-paragraf {
+.homepage--paragraf {
     background: #457B9D;
     display: inline-block;
     border: none;
@@ -47,7 +38,7 @@ body {
     text-align: center;
 }
 
-.activitie-group {
+.activitie--group {
     display: flex;
     justify-content: space-around;
     align-items: center;
