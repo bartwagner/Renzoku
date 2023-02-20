@@ -1,12 +1,9 @@
-//default
-favouriteMovieGenre("regular")
+//default configuration
 favouriteFruit("regular")
-favouriteMode("dark")
 favouriteEdgeStyle("round")
+favouriteMode("dark")
+favouriteMovieGenre("regular")
 
-////////////////////////////////////
-// IGONE THE CODE BELOW THIS LINE //
-////////////////////////////////////
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
 }
@@ -25,9 +22,11 @@ function favouriteMode(mode) {
     if (mode === "light" || !mode) {
         setProp('--background', "var(--light)");
         setProp('--text', "var(--dark)");
+        setProp('--borderImg', "var(--dark)");
     } else if (mode === "dark") {
         setProp('--background', "var(--dark)");
         setProp('--text', "var(--light)");
+        setProp('--borderImg', "var(--light)")
     }
 }
 
