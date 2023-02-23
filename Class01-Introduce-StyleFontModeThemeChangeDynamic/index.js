@@ -1,35 +1,56 @@
-//default configuration
+/*----------------------------Default configuration---------------------------------*/
 favouriteFruit("regular")
 favouriteEdgeStyle("round")
 favouriteMode("dark")
 favouriteMovieGenre("regular")
 
+/*---------------------------------The function that sets the properties receives the 
+property like image, background, borderImg, light, or dark, and the respective value 
+(var) or color like #f2f6c3, #68c4af etc.-------------------------------------------*/
 function setProp(prop, value) {
     document.documentElement.style.setProperty(prop, value)
 }
 
+/*---------------------------------It Changes the image(photo), button, textbox and 
+select css's for sharp, soft, or round look for style in the style.css
+             --sharp             --soft             --round
+------------------------------------------------------------------------------------*/
 function favouriteEdgeStyle(style) {
     setProp("--image", "var(--" + style + ")");
 }
 
+/*---------------------------------It Changes the font in all the website look for 
+style in the style.css
+    --superhero    --fantasy    --space    --military    --romantic    --scary
+    --cowboy       --regular    --fantasy
+------------------------------------------------------------------------------------*/
 function favouriteMovieGenre(font) {
     if (font) {
         setProp("--font", "var(--" + font + ")");
     }
 }
 
+/*---------------------------------It Changes to light or dark, being background, 
+text(color), and Border image look for style in the style.css
+             --light             --dark             --img, border-radius and border
+------------------------------------------------------------------------------------*/
 function favouriteMode(mode) {
     if (mode === "light" || !mode) {
         setProp('--background', "var(--light)");
-        setProp('--text', "var(--dark)");
-        setProp('--borderImg', "var(--dark)");
-    } else if (mode === "dark") {
+        setProp('--text',       "var(--dark)");
+        setProp('--borderImg',  "var(--dark)");
+    } 
+    else if (mode === "dark") {
         setProp('--background', "var(--dark)");
-        setProp('--text', "var(--light)");
-        setProp('--borderImg', "var(--light)")
+        setProp('--text',       "var(--light)");
+        setProp('--borderImg',  "var(--light)")
     }
 }
 
+/*---------------------------------It Changes the theme. See below
+   --pastel     --muted    --love    --sky    --forrest    --shiny    --banana
+   --watermelon --tomato   --avocado --orange --blueberry  --regular(black & light)
+------------------------------------------------------------------------------------*/
 function favouriteFruit(theme) {
     if (theme === "pastel") {
         setProp('--light', "#f2f6c3")
@@ -73,6 +94,8 @@ function favouriteFruit(theme) {
     } 
 }
 
+/*---------------------------------Method to send emails, correct is to create an API, 
+but this is a little challenge for me-----------------------------------------------*/
 function sendEmail(){
     var emailPerson = document.getElementById("textinput").value;
 
@@ -99,6 +122,7 @@ function sendEmail(){
     }
 }
 
+/*-----------------------Method to validate the email format -----------------------*/
 function checkValidateEmail(emailPerson){
 
     let check = /^[\w.\+]+@\w+.\w{2,}(?:.\w{2})?$/
