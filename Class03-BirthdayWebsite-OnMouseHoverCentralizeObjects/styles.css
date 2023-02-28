@@ -5,10 +5,12 @@ body {
     color: #ffffff;
 }
 
+/*---------------------------------Put the shadow all letters----------------------------------*/
 h1, h2, h3, h4, p {
     text-shadow: 0 0 1px black;
 }
 
+/*-----------------------------------------My image--------------------------------------------*/
 #bff--img {
     width: 150px;
     border-radius: 50%;
@@ -52,6 +54,7 @@ h1, h2, h3, h4, p {
     height: 200px;
 }
 
+/*----------------------------------------Gift Image-------------------------------------------*/
 .gift--img {
     margin: 20px auto;
     max-width: 400px;
@@ -62,6 +65,7 @@ h1, h2, h3, h4, p {
     background-size: cover;
 }
 
+/*---------------------------Under the gift image using OnMouseHove----------------------------*/
 #gift--img--happy:hover {
     background-image: url("images/happy.gif");
 }
@@ -81,6 +85,7 @@ h1, h2, h3, h4, p {
 #gift--img--cheers:hover {
     background-image: url("images/cheers.gif");
 }
+/*---------------------------------------------------------------------------------------------*/
 
 #footer {
     font-style: italic;
